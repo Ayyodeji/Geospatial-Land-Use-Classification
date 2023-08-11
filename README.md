@@ -70,7 +70,7 @@ The script outputs the following:
 - Plots of time series data showing feature changes over time.
 - Training and validation loss and accuracy curves during model training.
 - Evaluation metrics on the test dataset.
-- A saved trained model file (`model.h5`).
+- A saved trained model file (`../model/model.h5`).
 - A predicted geospatial image with land use and land cover predictions.
 
 ## License
