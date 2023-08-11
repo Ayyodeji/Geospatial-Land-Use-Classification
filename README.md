@@ -33,7 +33,7 @@ Before using this code, make sure you have the following dependencies installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/land-use-time-series.git
+   git clone https://github.com/Ayyodeji/Geospatial-Land-Use-Classification.git
    cd land-use-time-series
    ```
 
@@ -50,7 +50,7 @@ Before using this code, make sure you have the following dependencies installed:
 2. Run the script using a Python interpreter:
 
    ```bash
-   python land_use_time_series.py
+   python main.py
    ```
 
    This will execute the code and perform the following tasks:
