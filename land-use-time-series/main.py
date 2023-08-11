@@ -19,7 +19,7 @@ from matplotlib import colors
 # ## Settings
 
 # %%
-dataset = '../input/land-use-land-cover-time-series/time_series.csv'
+dataset = '/land-use-land-cover-time-series/time_series.csv'
 
 classe_info = {
   'not identified':           {'value':0, 'color': '#000000'},
@@ -167,7 +167,7 @@ model = LSTM(n_classes=len(classes), sequence_size=sequence_size, n_features=n_f
               
 model.summary()
 
-tf.keras.utils.plot_model(model, show_shapes=True, to_file='/kaggle/working/model.png')
+tf.keras.utils.plot_model(model, show_shapes=True, to_file='/working/model.png')
 
 # %% [markdown]
 # ## Create callbacks
@@ -230,7 +230,7 @@ model.save('model.h5')
 # ### Load image
 
 # %%
-image_path = '../input/land-use-land-cover-time-series/image_2019-10-01_2020-10-01.tif'
+image_path = '/land-use-land-cover-time-series/image_2019-10-01_2020-10-01.tif'
 predicted_path = './predicted_2019-10-01_2020-10-01.tif'
 data_source = gdal.Open(image_path)
 image = data_source.ReadAsArray()
@@ -347,7 +347,7 @@ patches = list(map(lambda item: mpatches.Patch(color=item[1].get('color'), label
 plt.legend(handles=patches, loc='center left', bbox_to_anchor=(1, 0.5))
     
 
-output = '/kaggle/working/predicted.mp4'
+output = '/src/predicted.mp4'
 
 ani.save(output)
 
